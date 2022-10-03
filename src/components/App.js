@@ -10,7 +10,7 @@ const App = () => {
   let [loading,setLoading] = useState(false);
   async function fetching(){
     setLoading(true);
-    const data = await fetch(`http://www.boredapi.com/api/activity?type=${type}`)
+    const data = await fetch(`https://www.boredapi.com/api/activity?type=${type}`)
     const res = await data.json();
     setActivity(res.activity);
     setLoading(false)
